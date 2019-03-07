@@ -1,0 +1,24 @@
+#sidebar {
+  width: 20vw;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  /* Moves the sidebar off canvas. */
+  -webkit-transform: translate(-20vw, 0);
+  transform: translate(-20vw, 0);
+  /* Animates the sidebar. */
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+#sidebar.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#sidebar .svg-inline--fa.close {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+}
