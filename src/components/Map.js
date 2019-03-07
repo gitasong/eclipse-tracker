@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMapboxGl, { Layer } from 'react-mapbox-gl';
+import { ZoomControl } from 'react-mapbox-gl';
 
 const Mapbox = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN,
@@ -20,6 +21,9 @@ class Map extends Component {
         center={[0, 23]}
         zoom={[1]}
       >
+        <ZoomControl
+          position="bottom-right"
+        />
         <Layer
           type="symbol"
           id="marker"
