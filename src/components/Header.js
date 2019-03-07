@@ -10,6 +10,7 @@ class Header extends Component {
           <FontAwesomeIcon
             icon="bars"
             id="hamburger"
+            onClick={this.props.openSidebar}
           />
         </span>
         <span className="title">

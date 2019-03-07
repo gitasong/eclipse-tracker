@@ -15,11 +15,20 @@ class App extends Component {
     this.state = {
       isSidebarOpen: false
     }
+
+    this.openSidebar = this.openSidebar.bind(this);
+  }
+
+  openSidebar() {
+    this.setState({
+      isSidebarOpen: true
+    });
   }
   render() {
     return (
       <div className="App">
         <Header
+          openSidebar={this.openSidebar}
         />
         <Sidebar
         />
