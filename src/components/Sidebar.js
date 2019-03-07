@@ -12,6 +12,7 @@ class Sidebar extends Component {
           <FontAwesomeIcon
             icon="times"
             className="close"
+            onClick={this.props.closeSidebar}
           />
         
       </div>

@@ -17,6 +17,7 @@ class App extends Component {
     }
 
     this.openSidebar = this.openSidebar.bind(this);
+    this.closeSidebar = this.closeSidebar.bind(this);
   }
 
   openSidebar() {
@@ -24,6 +25,13 @@ class App extends Component {
       isSidebarOpen: true
     });
   }
+
+  closeSidebar() {
+    this.setState({
+      isSidebarOpen: false
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -31,6 +39,8 @@ class App extends Component {
           openSidebar={this.openSidebar}
         />
         <Sidebar
+          isSidebarOpen={this.state.isSidebarOpen}
+          closeSidebar={this.closeSidebar}
         />
         <Map></Map>
       </div>
