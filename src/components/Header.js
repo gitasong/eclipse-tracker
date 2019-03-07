@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Header extends Component {
   render() {
     return(
-      <div></div>
+      <div className="header">
+        <span>
+          <FontAwesomeIcon
+            icon="bars"
+            id="hamburger"
+          />
+        </span>
+        <span className="title">
+          E c l i p s e&nbsp;&nbsp;&nbsp;T r a c k e r
+        </span>
+        <span></span>
+      </div>
     );
   }
 }
