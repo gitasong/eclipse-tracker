@@ -7,6 +7,7 @@ class Sidebar extends Component {
     return(
       <div
         id="sidebar"
+        className={this.props.isSidebarOpen ? "open" : null}
       >
         
           <FontAwesomeIcon
