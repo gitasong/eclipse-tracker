@@ -10,6 +10,12 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 library.add(faBars, faTimes);
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isSidebarOpen: false
+    }
+  }
   render() {
     return (
       <div className="App">
