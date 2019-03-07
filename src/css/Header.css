@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  width: 100vw;
+  height: 7.5vh;
+  background-color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.8);
+  font-family: sans-serif;
+  font-size: 1.5rem;  /* TODO: need to make responsive */
+  font-variant-caps: all-petite-caps;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  z-index: 888;
+}
+
+.header span {
+  width: 30vw;
+  margin-right: 3vw;
+  justify-content: space-around;
+}
+
+.header span:first-child {
+  margin-left: 2vw;
+}
+
+.header span:last-child {
+  margin-right: 2vw;
+}
+
+.header span.title {
+  text-align: center;
+}
