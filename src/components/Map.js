@@ -3,7 +3,8 @@ import ReactMapboxGl, { Layer } from "react-mapbox-gl";
 
 const Mapbox = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN,
-  minZoom: 2
+  minZoom: 2,
+  logoPosition: 'bottom-left'
 });
 
 class Map extends Component {
