@@ -8,6 +8,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "mapbox-gl": "^0.53.1",
     "react": "^16.8.3",
+    "react-date-picker": "^7.3.0",
     "react-dom": "^16.8.3",
     "react-mapbox-gl": "^4.2.0",
     "react-scripts": "2.1.5"
