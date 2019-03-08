@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DatePicker from 'react-date-picker';
+import '../App.css';
  
 class Calendar extends Component {
   state = {
@@ -8,12 +9,16 @@ class Calendar extends Component {
  
   onChange = date => this.setState({ date })
  
+
+ 
   render() {
     return (
-      <div>
+      <div className="calendar">
+       <p>Browse Eclipse Data By Date:</p>
         <DatePicker
           onChange={this.onChange}
           value={this.state.date}
+
         />
       </div>
     );
