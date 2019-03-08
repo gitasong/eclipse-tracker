@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../css/Sidebar.css';
-
+import Calendar from './Calendar';
 
 class Sidebar extends Component {
   render() {
@@ -16,7 +16,7 @@ class Sidebar extends Component {
             className="close"
             onClick={this.props.closeSidebar}
           />
-      
+      <Calendar />  
       </div>
     );
   }
