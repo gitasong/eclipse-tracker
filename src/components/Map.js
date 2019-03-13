@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import '../css/Map.css';
 import ReactMapGL, { NavigationControl } from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 
