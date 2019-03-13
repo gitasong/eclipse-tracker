@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { NavigationControl } from 'react-map-gl';
+import Geocoder from 'react-map-gl-geocoder';
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
@@ -11,6 +12,12 @@ const navStyle = {
   padding: '10px'
 };
 
+const geocoderStyle = {
+  position: 'absolute',
+  top: 100,
+  right: 0,
+  zIndex: 1000
+}
 
 class Map extends Component {
   constructor(props) {
@@ -60,6 +67,11 @@ class Map extends Component {
         mapStyle="mapbox://styles/mapbox/satellite-streets-v10"
         onViewportChange={this.handleViewportChange}
       >
+        <Geocoder
+          style={geocoderStyle}
+          mapRef={this.mapRef}
+          onViewportChange={this.handleViewportChange}
+          mapboxApiAccessToken={MAPBOX_TOKEN}
         />
         <div className="nav" style={navStyle}>
           <NavigationControl
