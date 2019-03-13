@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
