@@ -12,13 +12,6 @@ const navStyle = {
   padding: '10px'
 };
 
-const geocoderStyle = {
-  position: 'absolute',
-  top: 100,
-  right: 0,
-  zIndex: 1000
-}
-
 class Map extends Component {
   constructor(props) {
     super(props);
@@ -68,7 +61,6 @@ class Map extends Component {
         onViewportChange={this.handleViewportChange}
       >
         <Geocoder
-          style={geocoderStyle}
           mapRef={this.mapRef}
           onViewportChange={this.handleViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
