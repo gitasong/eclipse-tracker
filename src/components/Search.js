@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Sidebar.css';
 
 class Search extends Component {
   render() {
