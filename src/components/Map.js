@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import '../css/Map.css';
+import '../css/Sidebar.css';
 import ReactMapGL, { NavigationControl } from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 
@@ -26,8 +27,6 @@ class Map extends Component {
         zoom: 1.2
       }
     };
-
-    this.mapRef = React.createRef();
   }
 
   componentDidMount() {
@@ -53,16 +52,20 @@ class Map extends Component {
   }
 
   render() {
+    const {mapRef, containerRef } = this.props.refs;
+
     return (
       <ReactMapGL
-        ref={this.mapRef}
+        ref={mapRef}
         {...this.state.viewport}
         mapboxApiAccessToken={MAPBOX_TOKEN}
         mapStyle="mapbox://styles/mapbox/satellite-streets-v10"
         onViewportChange={this.handleViewportChange}
       >
         <Geocoder
-          mapRef={this.mapRef}
+          id="geocoder"
+          mapRef={mapRef}
+          containerRef={containerRef}
           onViewportChange={this.handleViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
         />

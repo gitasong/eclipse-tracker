@@ -17,6 +17,9 @@ class App extends Component {
       isSidebarOpen: false
     }
 
+    this.mapRef = React.createRef();
+    this.containerRef = React.createRef();
+
     this.openSidebar = this.openSidebar.bind(this);
     this.closeSidebar = this.closeSidebar.bind(this);
   }
@@ -34,16 +37,22 @@ class App extends Component {
   }
 
   render() {
+    const mapRef = this.mapRef;
+    const containerRef = this.containerRef;
+
     return (
       <div className="App">
         <Header
           openSidebar={this.openSidebar}
         />
         <Sidebar
+          containerRef={this.containerRef}
           isSidebarOpen={this.state.isSidebarOpen}
           closeSidebar={this.closeSidebar}
         />
-        <Map></Map>
+        <Map
+          refs={{ mapRef, containerRef }}
+        />
       </div>
     );
   }
