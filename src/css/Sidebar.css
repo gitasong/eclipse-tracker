@@ -4,17 +4,21 @@
   background-color: #fff;
   position: absolute;
   display: flex;
+  z-index: 999;
+}
+
+.closed {
   /* Moves the sidebar off canvas. */
   -webkit-transform: translate(-20vw, 0);
   transform: translate(-20vw, 0);
   /* Animates the sidebar. */
   transition: transform 0.3s ease;
-  z-index: 999;
 }
 
-#sidebar.open {
+.open {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+  width: inherit;
 }
 
 #sidebar .svg-inline--fa.close {
