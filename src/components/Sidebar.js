@@ -8,7 +8,7 @@ class Sidebar extends Component {
     return(
       <div
         id="sidebar"
-        className={this.props.isSidebarOpen ? "open" : null}
+        className={this.props.isSidebarOpen ? "open" : "closed"}
       >
           <Search
             containerRef={this.props.containerRef}
