@@ -7,6 +7,8 @@
   z-index: 999;
 }
 
+/* NOTE: Add the .closed and .open classes to all children of the Sidebar component */
+
 .closed {
   /* Moves the sidebar off canvas. */
   -webkit-transform: translate(-30vw, 0);
