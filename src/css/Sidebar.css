@@ -27,7 +27,7 @@
   right: 1vw;
 }
 
-div.mapboxgl-ctrl-geocoder {
+.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
   min-width: unset;
   max-width: unset;
   width: 100%;
