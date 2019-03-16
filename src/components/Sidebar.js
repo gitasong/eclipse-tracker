@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Search from './Search.js';
 import '../css/Sidebar.css';
 
 class Sidebar extends Component {
@@ -7,15 +8,18 @@ class Sidebar extends Component {
     return(
       <div
         id="sidebar"
-        className={this.props.isSidebarOpen ? "open" : null}
+        className={this.props.isSidebarOpen ? "open" : "closed"}
       >
-        
+          <Search
+            containerRef={this.props.containerRef}
+            isSidebarOpen={this.props.isSidebarOpen}
+          />
           <FontAwesomeIcon
             icon="times"
             className="close"
             onClick={this.props.closeSidebar}
           />
-        
+
       </div>
     );
   }

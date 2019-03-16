@@ -1,0 +1,4 @@
+.mapboxgl-ctrl-top-right {
+  position: absolute;
+  z-index: 1000 !important;
+}
