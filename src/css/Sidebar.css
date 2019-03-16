@@ -26,3 +26,9 @@
   top: 1vh;
   right: 1vw;
 }
+
+div.mapboxgl-ctrl-geocoder {
+  min-width: unset;
+  max-width: unset;
+  width: 100%;
+}
