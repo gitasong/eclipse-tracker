@@ -1,5 +1,5 @@
 #sidebar {
-  width: 20vw;
+  width: 30vw;
   height: 100vh;
   background-color: #fff;
   position: absolute;
@@ -9,8 +9,8 @@
 
 .closed {
   /* Moves the sidebar off canvas. */
-  -webkit-transform: translate(-20vw, 0);
-  transform: translate(-20vw, 0);
+  -webkit-transform: translate(-30vw, 0);
+  transform: translate(-30vw, 0);
   /* Animates the sidebar. */
   transition: transform 0.3s ease;
 }
