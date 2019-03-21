@@ -5,3 +5,7 @@ canvas.mapboxgl-canvas {
     width: 100%;
     height: 100%;
 }
+
+.calendar{
+   margin-top:100px;
+}

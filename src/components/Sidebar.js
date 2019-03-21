@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Search from './Search.js';
 import '../css/Sidebar.css';
+import CalendarB from './CalendarB';
 
 class Sidebar extends Component {
   render() {
@@ -19,7 +20,7 @@ class Sidebar extends Component {
             className="close"
             onClick={this.props.closeSidebar}
           />
-
+  <CalendarB />
       </div>
     );
   }
