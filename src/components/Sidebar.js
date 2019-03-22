@@ -11,6 +11,10 @@ class Sidebar extends Component {
         id="sidebar"
         className={this.props.isSidebarOpen ? "open" : "closed"}
       >
+
+         <div id="calendar">
+          <strong>Track Eclipse By Date: </strong> <Calendar />
+          </div>
           <Search
             id="search"
             containerRef={this.props.containerRef}
@@ -21,10 +25,7 @@ class Sidebar extends Component {
             className="close"
             onClick={this.props.closeSidebar}
           />
-          <div id="calendar">
-          <strong>Track Eclipse By Date: </strong> <Calendar />
-            
-          </div>
+          
       </div>
     );
   }
